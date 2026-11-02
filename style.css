@@ -156,3 +156,28 @@ nav a:hover {
 #updates .project:hover {
     transform: translateY(-5px);
 }
+#contact {
+    margin-top: 60px;
+    padding: 40px 20px;
+    background-color: #172033;
+    border-radius: 12px;
+    text-align: center;
+}
+
+#contact h2 {
+    color: #38bdf8;
+}
+
+#contact a {
+    display: inline-block;
+    background-color: #2563eb;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 8px;
+    text-decoration: none;
+    margin-top: 15px;
+}
+
+#contact a:hover {
+    background-color: #1d4ed8;
+}
