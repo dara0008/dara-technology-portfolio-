@@ -1,113 +1,159 @@
-/* General page styling */
+/* DARA'S DARK FEMININE TECH PORTFOLIO */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
 body {
-    background-color: #0b1120;
-    color: #ffffff;
+    background-color: #100d13;
+    color: #f8eff5;
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 40px;
     line-height: 1.8;
 }
 
-/* Main heading */
-h1 {
-    color: #60a5fa;
-    font-size: 42px;
-}
+/* Navigation */
 
-/* Section headings */
-h2 {
-    color: #38bdf8;
-    margin-top: 35px;
-}
-
-/* Paragraphs */
-p {
-    color: #cbd5e1;
-    font-size: 17px;
-}
-
-/* Learning list */
-ul {
-    color: #e2e8f0;
-    line-height: 2;
-}
-.project {
-    background-color: #172033;
-    padding: 20px;
-    margin-top: 20px;
-    border-radius: 12px;
-    border: 1px solid #334155;
-}
-
-.project h3 {
-    color: #60a5fa;
-}
-
-.project p {
-    color: #cbd5e1;
-}
 nav {
-    margin-bottom: 40px;
     display: flex;
     gap: 30px;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
 }
 
 nav a {
-    color: #60a5fa;
+    color: #e6a6c5;
     text-decoration: none;
-    font-size: 16px;
     font-weight: bold;
 }
 
 nav a:hover {
     color: #ffffff;
 }
+
+/* Hero section */
+
 .hero {
     padding: 80px 20px;
     max-width: 850px;
 }
 
 .hero .intro {
-    color: #38bdf8;
+    color: #e6a6c5;
     letter-spacing: 3px;
     font-size: 14px;
     font-weight: bold;
 }
 
 .hero h1 {
+    color: #f3c2d9;
     font-size: 55px;
-    margin-bottom: 10px;
 }
 
 .hero h2 {
+    color: #c8a5d8;
     font-size: 28px;
 }
 
-.hero-button {
+/* Headings */
+
+h2 {
+    color: #e6a6c5;
+    margin-top: 45px;
+}
+
+h3 {
+    color: #f3c2d9;
+}
+
+p {
+    color: #d7cbd4;
+}
+
+/* Buttons */
+
+.hero-button,
+#contact a {
     display: inline-block;
-    background-color: #2563eb;
+    background: #b76e91;
     color: white;
     padding: 12px 25px;
     border-radius: 8px;
     text-decoration: none;
+    margin-top: 15px;
+}
+
+.hero-button:hover,
+#contact a:hover {
+    background: #d18bab;
+}
+
+/* Project cards */
+
+.project {
+    background: #1c1620;
+    padding: 25px;
     margin-top: 20px;
+    border-radius: 14px;
+    border: 1px solid #50354b;
 }
 
-.hero-button:hover {
-    background-color: #1d4ed8;
+.project:hover {
+    border-color: #d18bab;
 }
 
-    /* Mobile Responsive Design */
+.status {
+    display: inline-block;
+    background: #39243a;
+    color: #e6a6c5;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 13px;
+}
+
+/* Learning updates */
+
+#updates {
+    margin-top: 60px;
+    padding-bottom: 40px;
+}
+
+#updates h2 {
+    border-bottom: 2px solid #b76e91;
+    padding-bottom: 12px;
+}
+
+/* Contact */
+
+#contact {
+    margin-top: 60px;
+    padding: 40px 20px;
+    background: #1c1620;
+    border-radius: 15px;
+    text-align: center;
+    border: 1px solid #50354b;
+}
+
+/* Footer */
+
+footer {
+    text-align: center;
+    padding: 30px 10px;
+    margin-top: 50px;
+    border-top: 1px solid #50354b;
+    color: #b9a6b5;
+}
+
+/* Mobile design */
 
 @media (max-width: 768px) {
-
     body {
         padding: 20px;
-    }
-
-    nav {
-        gap: 15px;
-        flex-wrap: wrap;
     }
 
     .hero {
@@ -122,62 +168,31 @@ nav a:hover {
         font-size: 22px;
     }
 
-    .hero p {
-        font-size: 15px;
-    }
-
-    .project {
-        padding: 15px;
+    nav {
+        gap: 15px;
     }
 }
-.status {
-    display: inline-block;
-    background-color: #1e3a8a;
-    color: #93c5fd;
-    padding: 6px 14px;
-    border-radius: 20px;
-    font-size: 13px;
-    margin-top: 10px;
+.tagline {
+    color: #e6a6c5;
+    font-size: 19px;
+    letter-spacing: 1px;
+    font-weight: 500;
+    margin-top: 15px;
 }
-#updates {
+#journey {
     margin-top: 60px;
-    padding-bottom: 40px;
+    padding: 20px 0;
 }
 
-#updates h2 {
-    border-bottom: 2px solid #2563eb;
+#journey h2 {
+    border-bottom: 2px solid #b76e91;
     padding-bottom: 12px;
 }
 
-#updates .project {
+#journey .project {
     transition: transform 0.3s ease;
 }
 
-#updates .project:hover {
+#journey .project:hover {
     transform: translateY(-5px);
-}
-#contact {
-    margin-top: 60px;
-    padding: 40px 20px;
-    background-color: #172033;
-    border-radius: 12px;
-    text-align: center;
-}
-
-#contact h2 {
-    color: #38bdf8;
-}
-
-#contact a {
-    display: inline-block;
-    background-color: #2563eb;
-    color: white;
-    padding: 12px 25px;
-    border-radius: 8px;
-    text-decoration: none;
-    margin-top: 15px;
-}
-
-#contact a:hover {
-    background-color: #1d4ed8;
 }
